@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Analytics Demo</title>
+    <link rel="stylesheet" href="VisualizeFilterSortDerive.css">
+</head>
+<body>
+    <h1>Visual Analytics - Interaction Techniques</h1>
+    <div id="filters">
+        <label for="filter">Filter by Name:</label>
+        <input type="text" id="filter" oninput="filterData()">
+    </div>
+    <button onclick="sortData()">Sort by Value</button>
+    <button id="sort-asc-btn">Sort Ascending</button>
+    <button id="sort-desc-btn">Sort Descending</button>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data rows will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+    <div id="derived">
+        <h2>Derived Insights</h2>
+        <p id="insights">Average Value: -</p>
+    </div>
+    <script src="VisualizeFilterSortDerive.js"></script>
+</body>
+</html>
